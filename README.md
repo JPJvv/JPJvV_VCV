@@ -4,7 +4,7 @@ Welcome to my Virtual CV repository! This project showcases my professional expe
 Purpose
 The purpose of this repository is to provide an online, easily accessible, and visually appealing representation of my CV. By leveraging web technologies, I aim to offer potential employers and collaborators a comprehensive view of my background, technical skills, and career aspirations.
 
-Features
+Features:
 Personal Information: Contact details including email, phone number, and LinkedIn profile for easy communication.
 Personal Statement: An overview of my academic and professional journey, highlighting my passion for technology and my goals.
 Education: Detailed information about my educational background, including my BSc in Information Technology and BCom in Economic Sciences & International Trade from North-West University.
@@ -17,10 +17,10 @@ HTML: For structuring the content of the CV.
 CSS: For styling the content and enhancing the visual appeal.
 JavaScript: For adding interactive features (optional).
 GitHub Pages: For hosting the website and making it publicly accessible.
-How to Access
+How to Access:
 The CV is hosted on GitHub Pages and can be accessed directly via the URL provided in the repository settings. The repository contains all the necessary files, including index.html, styles.css, and any associated assets.
 
-Contribution
+Contribution:
 While this project primarily serves as a personal showcase, I welcome any suggestions or improvements. Feel free to fork the repository, make changes, and submit pull requests.
 
 Thank you for visiting my Virtual CV repository. I hope this digital format effectively conveys my qualifications and enthusiasm for technology. For any inquiries or opportunities, please don't hesitate to contact me via email or LinkedIn.
