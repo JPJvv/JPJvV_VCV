@@ -1,10 +1,8 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -14,13 +12,14 @@ body {
     padding: 20px;
 }
 
-
 header {
     text-align: center;
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
 }
 
 header img.profile-img {
@@ -28,6 +27,11 @@ header img.profile-img {
     height: 300px;
     border-radius: 50%;
     margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+header img.profile-img:hover {
+    transform: scale(1.1);
 }
 
 header h1 {
@@ -43,13 +47,26 @@ header nav a {
     margin: 0 10px;
     color: #007BFF;
     text-decoration: none;
+    position: relative;
 }
 
 header nav a:hover {
     text-decoration: underline;
 }
 
-/* Section styling */
+header nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #007BFF;
+    transition: width 0.3s;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
 section {
     background-color: #fff;
     padding: 20px;
@@ -62,6 +79,16 @@ section h2 {
     margin-bottom: 15px;
     font-size: 1.5em;
     color: #333;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #007BFF;
+    margin-top: 10px;
 }
 
 section h3 {
@@ -79,7 +106,6 @@ section ul li {
     margin-bottom: 10px;
 }
 
-/* Footer styling */
 footer {
     text-align: center;
     padding: 10px;
@@ -91,7 +117,6 @@ footer {
 footer p {
     margin: 0;
 }
-
 
 @media (max-width: 768px) {
     body {
@@ -122,5 +147,57 @@ footer p {
 
     section h3 {
         font-size: 1em;
+    }
+}
+
+.skill-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 20px;
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+.skill-level.python {
+    width: 90%;
+    animation: fillSkillBar 2s ease-in-out;
+}
+
+.skill-level.c {
+    width: 70%;
+    animation: fillSkillBar 2s ease-in-out;
+}
+
+.skill-level.java {
+    width: 80%;
+    animation: fillSkillBar 2s ease-in-out;
+}
+
+@keyframes fillSkillBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
     }
 }
