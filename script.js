@@ -10,8 +10,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const skillLevels = document.querySelectorAll('.skill-level');
     skillLevels.forEach(skill => {
-        skill.style.width = 0;
-        skill.style.animation = `${skill.classList[1]} 2s ease-in-out forwards`;
+        const width = skill.classList.contains('python') ? '90%' :
+                      skill.classList.contains('c') ? '70%' :
+                      skill.classList.contains('java') ? '80%' : '0';
+        skill.style.width = width;
+        skill.style.transition = 'width 2s ease-in-out';
     });
 
     const darkModeToggle = document.getElementById('dark-mode-toggle');
