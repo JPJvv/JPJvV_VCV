@@ -13,10 +13,10 @@ The purpose of this repository is to provide an online, easily accessible, and v
 - Interests: Insights into my interests, such as reading tech blogs, following emerging technologies like AI, blockchain, and IoT, and engaging in activities like hiking and cooking.
 - Certifications: Information about certifications in progress, including Microsoft Azure Fundamentals (AZ-900) and Entry Certificate in Business Analysis (ECBA).
 ## Technologies Used:
-HTML: For structuring the content of the CV.
-CSS: For styling the content and enhancing the visual appeal.
-JavaScript: For adding interactive features.
-GitHub Pages: For hosting the website and making it publicly accessible.
+- HTML: For structuring the content of the CV.
+- CSS: For styling the content and enhancing the visual appeal.
+- JavaScript: For adding interactive features.
+- GitHub Pages: For hosting the website and making it publicly accessible.
 ### How to Access:
 The CV is hosted on GitHub Pages and can be accessed directly via the URL provided in the repository settings. The repository contains all the necessary files, including index.html, styles.css, and any associated assets.
 
