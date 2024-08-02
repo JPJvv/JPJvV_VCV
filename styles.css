@@ -205,51 +205,19 @@ footer p {
 .skill-level {
     height: 20px;
     border-radius: 5px;
+    width: 0; /* Set initial width to 0 for animation */
 }
 
 .skill-level.python {
-    width: 90%;
     background-color: #007BFF; /* Blue for Python */
-    animation: fillPythonSkill 2s ease-in-out forwards;
 }
 
 .skill-level.c {
-    width: 70%;
     background-color: #28A745; /* Green for C/C++ */
-    animation: fillCSkill 2s ease-in-out forwards;
 }
 
 .skill-level.java {
-    width: 80%;
     background-color: #FFC107; /* Yellow for Java */
-    animation: fillJavaSkill 2s ease-in-out forwards;
-}
-
-@keyframes fillPythonSkill {
-    from {
-        width: 0;
-    }
-    to {
-        width: 90%;
-    }
-}
-
-@keyframes fillCSkill {
-    from {
-        width: 0;
-    }
-    to {
-        width: 70%;
-    }
-}
-
-@keyframes fillJavaSkill {
-    from {
-        width: 0;
-    }
-    to {
-        width: 80%;
-    }
 }
 
 .tooltip {
