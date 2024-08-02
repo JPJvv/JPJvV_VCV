@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const skillLevels = document.querySelectorAll('.skill-level');
     skillLevels.forEach(skill => {
         skill.style.width = 0;
-        skill.style.animation = `fillSkillBar 2s ease-in-out forwards`;
+        skill.style.animation = `${skill.classList[1]} 2s ease-in-out forwards`;
     });
 });
