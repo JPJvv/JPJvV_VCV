@@ -7,4 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
             sectionContent.style.display = sectionContent.style.display === 'none' ? 'block' : 'none';
         });
     });
+
+    const skillLevels = document.querySelectorAll('.skill-level');
+    skillLevels.forEach(skill => {
+        skill.style.width = 0;
+        skill.style.animation = `fillSkillBar 2s ease-in-out forwards`;
+    });
 });
