@@ -13,4 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
         skill.style.width = 0;
         skill.style.animation = `${skill.classList[1]} 2s ease-in-out forwards`;
     });
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+    });
 });
